@@ -1,0 +1,15 @@
+// Function to reverse every word in a sentence
+function reverseWords(sentence) {
+    const words = sentence.split(' ');
+    const reversedWords = words.map(word => word.split('').reverse().join(''));
+    return reversedWords.join(' ');
+}
+
+const inputSentence = "This is a sunny day";
+const reversedSentence = reverseWords(inputSentence);
+console.log("Reversed every word: " + reversedSentence);
+
+// Sorting an array in descending order
+const originalArray = [5, 2, 8, 1, 4];
+const sortedArray = originalArray.sort((a, b) => b - a);
+console.log("Sorted array in descending order: " + sortedArray);
